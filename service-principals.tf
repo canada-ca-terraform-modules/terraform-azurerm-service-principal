@@ -1,5 +1,5 @@
 resource "azuread_application" "terraform-sp" {
-  name       = "terraform-sp"
+  name       = var.sp_name
   reply_urls = ["http://terraform-sp"]
   type       = "native"
 }
